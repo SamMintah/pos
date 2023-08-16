@@ -1,5 +1,4 @@
 import BillsModel from '../models/billsModel.js';
-
 // Add items
 const addBillsController = async (req, res) => {
   try {
@@ -11,7 +10,6 @@ const addBillsController = async (req, res) => {
     res.status(500).send('Something went wrong');
   }
 };
-
 // Get bills data
 const getBillsController = async (req, res) => {
   try {
