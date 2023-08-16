@@ -16,7 +16,6 @@ const loginController = async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 };
-
 // Register
 const registerController = async (req, res) => {
   try {
