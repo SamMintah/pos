@@ -10,8 +10,13 @@ import billsRoute from './routes/billsRoute.js';
 dotenv.config();
 connectDb();
 
+const corsOptions = {
+  origin: 'https://pos-g7g0plccy-sammintah.vercel.app/', 
+  methods: ['POST'],
+  optionsSuccessStatus: 200, 
+};
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(morgan('dev'));
 
